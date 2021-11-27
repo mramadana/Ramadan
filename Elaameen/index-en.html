@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الاعلاميين</title>
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/simple-lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style-en.css" rel="stylesheet">
+    <link href="css/loader.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/d10920a460.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+    <a class="outer-brand" href="index.html"><img src="img/logo.png" alt="" width="130px" height="110px"></a>
+     <!--loader-->
+     <div class="loader-container" id="loader-container">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--sidebar-->
+    <div class="mob-overlay"></div>
+    <div class="sidebar-wrapper">
+       <div class="container">
+           <div class="m-head">
+               <h3>القائمة الرئيسية</h3>
+           </div>
+            <div id="burgerBtn"></div>
+            <ul class="sidebar-menu list-unstyled text-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home-ar.html">معلومات عن الجمعية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us-ar.html">خدمات الجمعية </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact-us-ar.html">عضويات الجمعية</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropOne" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="multiCollapseExample2">
+                            حوكمة الجمعية
+                        </a>
+                        <div class="collapse" id="collapseOne">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact-us-ar.html">أخبار الجمعية</a>
+                  </li>
+            </ul>
+       </div>
+    </div>
+    <!--start header-->
+    <header>
+        <div class="menu-logo">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5 col-md-8 col-lg-10">
+                            <ul class="social-list list-unstyled pt-2">
+                                <li class="social-item d-inline">
+                                    <a href="#" class="social-link">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item d-inline">
+                                    <a href="#" class="social-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-item d-inline">
+                                    <a href="#" class="social-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-7 col-md-4 col-lg-2">
+                            <ul class="lang-des list-unstyled pt-1">
+                                <li class="lang-item d-inline-block">
+                                    <a href="#">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </li>
+                                <span class="lang-divider d-inline-block"></span>
+                                <li class="lang-item dropdown d-inline-block">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropOne" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <img src="img/eng.png" alt=""> en
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropOne">
+                                        <a class="dropdown-item" href="index.html"><img src="img/saudi-arabia.png" alt=""> عربي</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a class="navbar-brand" href="home-ar.html"><img src="img/logo.png" alt="" width="130px" height="110px"></a>
+                <button class="navbar-toggler" type="button" id="sidebar_toggler">
+                    <i class="fa fas fa-bars bars-toggler-icon"></i>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto pt-2">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="home-ar.html">معلومات عن الجمعية</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us-ar.html">خدمات الجمعية </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us-ar.html">عضويات الجمعية</a>
+                    </li>
+                    <li class="nav-item has-drop-menu">
+                        <a class="nav-link" href="about-us-ar.html">حوكمة الجمعية<i class="fa fa-chevron-down"></i></a>
+                        <ul style="display: none;" class="second-menu list-unstyled">
+                            <li>
+                                <a href="#" class="sf-with-ul">عن الجمعية <i class=" fa fa-chevron-left"></i></a>
+                                <ul style="display: none;" class="sub-menu list-unstyled">
+                                <li><a href="one.html">عن الجمعية</a></li>
+                                <li><a href="two.html">عن الجمعية</a></li>
+                                <li><a href="three.html">عن الجمعية</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="sf-with-ul"> عن الجمعية 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us-ar.html">أخبار الجمعية</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start top section-->
+    <div class="header-section">
+        <div class="container">
+            <div id="mainCarousel" class="carousel slide header-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainCarousel" data-slide-to="1"></li>
+                    <li data-target="#mainCarousel" data-slide-to="2"></li>
+                    <li data-target="#mainCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 top-section">
+                                <h5>جمعية الاعلاميين السعوديين</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة </p>
+                                <a href="#" class="btn btn-primary show-more-btn hvr-sweep-to-left"> قراءة المزيد <img src="img/arrow-left.png" alt=""></a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="top-img d-flex justify-content-center justify-content-lg-end">
+                                    <img src="img/Screenshot.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 top-section">
+                                <h5>جمعية الاعلاميين السعوديين</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة </p>
+                                    <a href="#" class="btn btn-primary show-more-btn hvr-sweep-to-left"> قراءة المزيد <img src="img/arrow-left.png" alt=""></a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="top-img d-flex justify-content-center justify-content-lg-end">
+                                    <img src="img/Screenshot.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 top-section">
+                                <h5>جمعية الاعلاميين السعوديين</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة </p>
+                                    <a href="#" class="btn btn-primary show-more-btn hvr-sweep-to-left"> قراءة المزيد <img src="img/arrow-left.png" alt=""></a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="top-img d-flex justify-content-center justify-content-lg-end">
+                                    <img src="img/Screenshot.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 top-section">
+                                <h5>جمعية الاعلاميين السعوديين</h5>
+                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                    النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة </p>
+                                    <a href="#" class="btn btn-primary show-more-btn hvr-sweep-to-left"> قراءة المزيد <img src="img/arrow-left.png" alt=""></a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="top-img d-flex justify-content-center justify-content-lg-end">
+                                    <img src="img/Screenshot.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+                    <img src="img/ar-l.png" alt="" width="36px" height="36px">
+                </a>
+                <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+                    <img src="img/ar-r.png" alt="" width="36px" height="36px">
+                </a>
+              </div>
+        </div>
+    </div>
+    <!--start about us-->
+    <div class="main-section numbers-section">
+        <div class="container">
+            <span class="main-info-btn d-block mx-auto">معلومات عنا</span>
+            <h3 class="main-center-title">جمعية الاعلاميين السعوديين</h3>
+            <p class="main-center-des">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card numbers-card wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/vision.png" alt="...">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">رؤيتنا</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                 النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card numbers-card wow flipInX" data-wow-duration="1s" data-wow-offset="300" >
+                        <div class="card-thumbnail">
+                            <img src="img/goals.png" alt="...">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">أهدافنا</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card numbers-card wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/msg.png" alt="...">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">رسالتنا</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card numbers-card wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/good.png" alt="...">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">قيمنا</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--start info section-->
+    <div class="main-section info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="info-sec-img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <img src="img/info.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="important-info">
+                        <span class="main-info-btn d-block ">معلومات عنا</span>
+                        <h3 class="main-title">معلومات عن جمعية الاعلاميين السعوديين</h3>
+                        <p class="main-des">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص 
+                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة  </p>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="media media-info">
+                                    <img src="img/check.png" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                      <h5 class="mt-0">الالتزام</h5>
+                                      <p>هذا النص مثال لنص يمكن أن يستبدل</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="media media-info">
+                                    <img src="img/check.png" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                      <h5 class="mt-0">التنوع</h5>
+                                      <p>هذا النص مثال لنص يمكن أن يستبدل</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="media media-info">
+                                    <img src="img/check.png" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                      <h5 class="mt-0">الجودة</h5>
+                                      <p>هذا النص مثال لنص يمكن أن يستبدل</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="media media-info">
+                                    <img src="img/check.png" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                      <h5 class="mt-0">الشفافية</h5>
+                                      <p>هذا النص مثال لنص يمكن أن يستبدل</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--start membership-->
+     <div class="main-section membership-section">
+        <div class="container">
+            <span class="main-info-btn orange-bk d-block mx-auto"> العضويات</span>
+            <h3 class="main-center-title clr-white">عضويات الجمعية</h3>
+            <p class="main-center-des clr-white">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card membership-card wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/wrk.png" alt="...">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">عضوية عامل</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                 النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card membership-card wow flipInX" data-wow-duration="1s" data-wow-offset="300" >
+                        <div class="card-thumbnail">
+                            <img src="img/nts.png" alt="...">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">عضوية منتسب</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--start services-->
+    <div class="main-section services-section">
+        <div class="container">
+            <span class="main-info-btn d-block mx-auto"> خدماتنا</span>
+            <h3 class="main-center-title">الخدمات التي تقدمها الجمعية</h3>
+            <p class="main-center-des">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="media services-media wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/training.png" alt="..." class="mt-4">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">التدريب والتأهيل</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                 النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media services-media wow flipInX" data-wow-duration="1s" data-wow-offset="300" >
+                        <div class="card-thumbnail">
+                            <img src="img/meet.png" alt="..." class="mt-4">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">اللقاءات الاعلامية</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media services-media wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/culture.png" alt="..." class="mt-4">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">المنتجات التثقيفية</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media services-media wow flipInX" data-wow-duration="1s" data-wow-offset="300">
+                        <div class="card-thumbnail">
+                            <img src="img/tr.png" alt="..." class="mt-4">
+                        </div> 
+                        <div class="card-body">
+                            <h5 class="card-title">التدريب والتأهيل</h5>
+                            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل ف نفس المساحة، لقد تم توليد هذا
+                                النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--start contact us-->
+      <div class="contact-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5 contact-info">
+                <span class="main-info-btn d-block "> تواصل معنا</span>
+                <h3 class="main-title"> تواصل معنا</h3>
+                <p class="main-des">  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                <div class="media media-info">
+                    <img src="img/ph.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">رقم الجوال</h5>
+                      <p>123-456-7898</p>
+                    </div>
+                </div>
+                <div class="media media-info">
+                    <img src="img/mail.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">البريد الالكتروني</h5>
+                      <p>name@gmail.com</p>
+                    </div>
+                </div>
+                <div class="media media-info">
+                    <img src="img/location.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">عنوان الجمعية</h5>
+                      <p>الرياض -  السعودية</p>
+                    </div>
+                </div>
+                <div class="contact-social mt-3">
+                    <p> روابط التواصل الاجتماعي</p>
+                    <ul class="social-list list-unstyled">
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <img src="img/you.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <img src="img/in.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <img src="img/tw.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <img src="img/face.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+            <div class="col-12 col-md-6 offset-md-1">
+                    <form action="" class="report-form pt-5">
+                        <div class="form-group mb-4">
+                            <label for="yourName">اسم المستخدم</label>
+                            <input type="text" class="form-control" id="yourName" placeholder="الرجاء ادخال اسم المستخدم">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="yourNumber"> رقم الجوال</label>
+                            <input type="email" id="yourNumber" class="form-control" placeholder="الرجاءادخال رقم الجوال">
+                        </div>
+                        <label for="yourMsg">اسم المستخدم</label>
+                        <textarea name="msg" id="yourMsg" class="form-control" placeholder="الرجاء كتابة رسالتك"></textarea>
+                        <button class="btn btn-primary show-more-btn hvr-sweep-to-left d-block mt-4" type="submit">ارسال <img src="img/arrow-left.png" alt=""></button>
+                    </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--start partners-->
+    <div class="main-section partners-section">
+        <div class="container">
+            <span class="main-info-btn d-block mx-auto"> الشركاء</span>
+            <h3 class="main-center-title">شركاء النجاح</h3>
+            <p class="main-center-des">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+            <div class="five_items_carousel">
+                <div class="partners-product">
+                    <img src="img/Asus_logo_black.png" alt="">
+                </div>
+                <div class="partners-product">
+                    <img src="img/Logo_FINAL_web_FULL-SIZE.png" alt="">
+                </div>
+                <div class="partners-product">
+                    <img src="img/Canon_logo_black.png" alt="">
+                </div>
+                <div class="partners-product">
+                    <img src="img/Asus_logo_black.png" alt="">
+                </div>
+                <div class="partners-product">
+                    <img src="img/Logo_FINAL_web_FULL-SIZE.png" alt="">
+                </div>
+                <div class="partners-product">
+                    <img src="img/Canon_logo_black.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--Start footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center mb-5">
+                    <img src="img/logo.png" alt="">
+                </div>    
+                <div class="col-12 col-lg-10 mx-auto mb-4"> 
+                    <ul class="menu row" style="list-style: none;">
+                        <li class="menu-item col-6 col-md-4 col-lg">
+                            <a href="#">معلومات عن الجمعية</a>
+                        </li>
+                        <li class="menu-item col-6 col-md-4 col-lg">
+                            <a href="#">خدمات الجمعية </a>
+                        </li>
+                        <li class="menu-item col-6 col-md-4 col-lg">
+                            <a href="#">عضويات الجمعية</a>
+                        </li>
+                        <li class="menu-item col-6 col-md-4 col-lg">
+                            <a href="#"> حوكمة الجمعية</a>
+                        </li>
+                        <li class="menu-item col-6 col-md-4 col-lg">
+                            <a href="#"> أخبار الجمعية</a>
+                        </li>
+                        <li class="menu-item col-6 col-md-4 col-lg">
+                            <a href="#"> تواصل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <ul class="social-list list-unstyled">
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <i class="fa fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <i class="fa fab fa-youtube-play"></i>
+                            </a>
+                        </li>
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-item d-inline">
+                            <a href="#" class="social-link">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--copyrights-->
+     <div class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10">
+                    <p>جميع الحقوق محفوظة جمعية الإعلاميين السعوديين </p>
+                </div>
+                <div class="col-12 col-md-2">
+                    <img src="img/kian.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="go-top" data-toggle="tooltip" title="" data-placement="left" data-original-title="go to top" >
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <!--call us section-->
+    <div class="call-us-now d-flex">
+        <div href="#" class="call-link toggle-call-list">
+            <i class="fa fa-commenting-o"></i>
+        </div>
+        <ul class="call-list list-unstyled">
+            <li class="call-item d-inline-block">
+                <a href="#" class="call-link d-inline-block" data-toggle="tooltip" data-placement="top" title="سجل بياناتك">
+                    <img src="img/smu-4.png" alt="" width="34px" height="40px">
+                </a>
+            </li> 
+            <li class="call-item d-inline-block">
+                <a href="#" class="call-link d-inline-block" data-toggle="tooltip" data-placement="top" title="Whatsapp">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </li>
+            <li class="call-item d-inline-block">
+                <a href="#" class="call-link d-inline-block" data-toggle="tooltip" data-placement="top" title="اتصل">
+                    <i class="fa fa-phone"></i>
+                </a>
+            </li>
+              
+        </ul>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/scroll-out.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index-ar.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init(); 
+        ScrollOut ({
+            targets: '.info-sec-img'
+        })
+      </script>
+      
+</body>
+
+</html>

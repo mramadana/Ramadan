@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simple Map</title>
+
+	<!-- some script links	-->
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAcNGRxy3xOCZTxU3TBg-TyUsEgbU1ltU&callback=initMap" defer></script>
+
+	<!-- ens script links-->
+
+	<style type="text/css">
+		/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+		#map {
+			height: 100%;
+		}
+
+		/* Optional: Makes the sample page fill the window. */
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="map"></div>
+	    <div id="right-panel">
+      <p>Total Distance: <span id="total"></span></p>
+    </div>
+	<script>
+		//		let map;
+
+		//		function initMap() {
+		//			map = new google.maps.Map(document.getElementById("map"), {
+		//				center: {
+		//					lat: 31.039056,
+		//					lng: 31.375833
+		//				},
+		//				zoom: 20,
+		//			});
+		//
+		//			// fucken marker 
+		//			var marker = new google.maps.Marker({
+		//
+		//				position: {
+		//					lat: 31.039056,
+		//					lng: 31.375833
+		//				},
+		//				map: map,
+		//				icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+		//			});
+		//		}
+
+
+
+
+		function initMap() {
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 20,
+				center: {
+					lat: 31.039056,
+					lng: 31.375833
+				},
+			});
+			// Create an array of alphabetical characters used to label the markers.
+			const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			// Add some markers to the map.
+			// Note: The code uses the JavaScript Array.prototype.map() method to
+			// create an array of markers based on a given "locations" array.
+			// The map() method here has nothing to do with the Google Maps API.
+			const markers = locations.map((location, i) => {
+				return new google.maps.Marker({
+					position: location,
+					label: labels[i % labels.length],
+				});
+			});
+			// Add a marker clusterer to manage the markers.
+			new MarkerClusterer(map, markers, {
+				imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+			});
+		}
+		const locations = [{
+				lat: 31.039056,
+				lng: 31.375833
+			},
+			{
+				lat: 31.047205,
+				lng: 31.380361
+			},
+			{
+				lat: 31.034941,
+				lng: 31.364580
+			},
+
+		];
+
+	</script>
+
+</body>
+
+</html>

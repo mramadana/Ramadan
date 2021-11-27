@@ -19,8 +19,14 @@ html {
 body {
     font-family: $font-normal;
     overflow-x: hidden;
-    direction: rtl; 
-    text-align: right;
+    #{$ltr} & {
+        direction: ltr; 
+        text-align: left;
+    }
+    #{$rtl} & {
+        direction: rtl; 
+        text-align: right;
+    }
     &#{$theme-light} {
         background-color: $white;
         color: $dark-color;

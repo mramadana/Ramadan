@@ -1,0 +1,93 @@
+/*
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 250px;
+	background: #9c9cb3;
+	margin: 100px auto;
+	color: white;
+	padding: 10px 0px 10px 10px;
+
+}
+
+.container a {
+	text-decoration: none;
+	color: #00fdb7f2;
+	font-weight: bold;
+
+}
+
+.list {
+	list-style: none;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+.items {
+	list-style: none;
+	display: none;
+}
+
+.container .list li {
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+.child{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.arrow {
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-bottom: 1px solid #00fdb7f2;
+	border-right: 1px solid #00fdb7f2;
+	right: 3px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.show {
+	max-height: 50px;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav {
+	padding-left: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+.hid {
+	
+	transition: all 0.5s ease-in-out;
+	
+}
+.rotate {
+	transform: rotate(-45deg);
+	transition: all 0.5s ease-in-out;}
+.active {
+	transform: translateX(0);
+	transition: all 0.5s ease-in-out;
+
+}
+.sub {
+	display: none;
+}*/
+
+
+
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

@@ -55,9 +55,13 @@ html {
 
 body {
   font-family: "HSDream-Light", sans-serif, "Font Awesome 5 Free";
-  overflow-x: hidden;
-  direction: rtl;
-  text-align: right; }
+  overflow-x: hidden; }
+  html[lang="en"] body {
+    direction: ltr;
+    text-align: left; }
+  html[lang="ar"] body {
+    direction: rtl;
+    text-align: right; }
   body.light-theme {
     background-color: #ffffff;
     color: #555555; }
@@ -163,13 +167,16 @@ input:focus {
           display: block;
           position: fixed;
           top: 0;
-          right: 0;
           width: 220px;
           height: 100%;
           background: #2a4e9685;
           padding: 20px 0;
           text-align: center;
           transition: 0.5s; }
+          html[lang="en"] .header .inner .main-nav .nav-links {
+            left: 0; }
+          html[lang="ar"] .header .inner .main-nav .nav-links {
+            right: 0; }
           html[lang="en"] .header .inner .main-nav .nav-links {
             transform: translateX(-100%); }
           html[lang="ar"] .header .inner .main-nav .nav-links {
